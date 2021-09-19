@@ -1,6 +1,6 @@
 {
   "name": "uct-theme",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "uct-theme",
   "main": "index.scss",
   "bin": {

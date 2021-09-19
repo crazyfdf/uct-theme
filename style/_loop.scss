@@ -3,25 +3,25 @@
   @each $sizeKey, $size in $space-sizes {
     // mt10 margin-top:10rpx
     @each $directionKey, $direction in $space-directions {
-      .#{$typeKey}#{$directionKey}#{$sizeKey} {
+      .#{$typeKey}#{$directionKey}#{""+$sizeKey} {
         #{$type}-#{$direction}: $size;
       }
     }
 
     // mx10 margin: 10rpx 0;
-    .#{$typeKey}x#{$sizeKey} {
+    .#{$typeKey}x#{""+$sizeKey} {
       #{$type}-left: $size;
       #{$type}-right: $size;
     }
 
     // my10 margin: 0 10rpx;
-    .#{$typeKey}y#{$sizeKey} {
+    .#{$typeKey}y#{""+$sizeKey} {
       #{$type}-top: $size;
       #{$type}-bottom: $size;
     }
 
     // ma10 margin: 10rpx ;
-    .#{$typeKey}a#{$sizeKey} {
+    .#{$typeKey}a#{""+$sizeKey} {
       #{$type}: $size;
     }
   }
@@ -32,13 +32,13 @@
   // c-red  color:red;
   // bc-red background-color: red;
   @each $sizeKey, $size in $colorSizes {
-    .#{$typeKey}-#{$sizeKey} {
+    .#{$typeKey}-#{""+$sizeKey} {
       #{$type}: $size;
     }
 
     // bc-red-1 background-color: rgba(red,.9);
     @for $i from 0 to 9 {
-      .#{$typeKey}-#{$sizeKey}-#{$i} {
+      .#{$typeKey}-#{""+$sizeKey}-#{$i} {
         #{$type}: rgba($size, 1 - $i/10);
       }
     }
@@ -51,13 +51,13 @@
   @each $sizeKey, $size in $colorSizes {
     @for $i from 1 to 2 {
       // bs-1-red border:2rpx solid red
-      .b#{$typeKey}-#{$i}-#{$sizeKey} {
+      .b#{$typeKey}-#{$i}-#{""+$sizeKey} {
         border: $i * 2px $type $size;
       }
 
       // bs-t-1-red border-top:2rpx solid red
       @each $directionKey, $direction in $space-directions {
-        .b#{$typeKey}-#{$directionKey}-#{$i}-#{$sizeKey} {
+        .b#{$typeKey}-#{$directionKey}-#{$i}-#{""+$sizeKey} {
           border-#{$direction}: $i * 2px $type $size;
         }
       }
