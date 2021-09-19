@@ -1,0 +1,23 @@
+{
+  "name": "uct-theme",
+  "version": "0.0.1",
+  "description": "uct-theme",
+  "main": "index.js",
+  "bin": {
+    "uct-theme": "./bin/uct-theme"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.2.0",
+    "inquirer": "^8.1.5"
+  },
+  "keywords": [
+    "uct",
+    "theme"
+  ],
+  "author": "huoling"
+}
