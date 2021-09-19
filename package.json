@@ -1,8 +1,8 @@
 {
   "name": "uct-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "uct-theme",
-  "main": "index.js",
+  "main": "index.scss",
   "bin": {
     "uct-theme": "./bin/uct-theme"
   },
