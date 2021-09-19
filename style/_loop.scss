@@ -1,8 +1,8 @@
 // 偏移模型
-@each $typeKey, $type in $spaceTypes {
-  @each $sizeKey, $size in $spaceSizes {
+@each $typeKey, $type in $space-types {
+  @each $sizeKey, $size in $space-sizes {
     // mt10 margin-top:10rpx
-    @each $directionKey, $direction in $spaceDirections {
+    @each $directionKey, $direction in $space-directions {
       .#{$typeKey}#{$directionKey}#{$sizeKey} {
         #{$type}-#{$direction}: $size;
       }
@@ -28,7 +28,7 @@
 }
 
 // 颜色模型
-@each $typeKey, $type in $colorTypes {
+@each $typeKey, $type in $color-types {
   // c-red  color:red;
   // bc-red background-color: red;
   @each $sizeKey, $size in $colorSizes {
@@ -39,7 +39,7 @@
     // bc-red-1 background-color: rgba(red,.9);
     @for $i from 0 to 9 {
       .#{$typeKey}-#{$sizeKey}-#{$i} {
-        #{$type}: rgba($size, (1-$i/10));
+        #{$type}: rgba($size, 1 - $i/10);
       }
     }
   }
@@ -47,7 +47,7 @@
 
 // 边框模型
 
-@each $typeKey, $type in $borderTypes {
+@each $typeKey, $type in $border-types {
   @each $sizeKey, $size in $colorSizes {
     @for $i from 1 to 2 {
       // bs-1-red border:2rpx solid red
@@ -56,7 +56,7 @@
       }
 
       // bs-t-1-red border-top:2rpx solid red
-      @each $directionKey, $direction in $spaceDirections {
+      @each $directionKey, $direction in $space-directions {
         .b#{$typeKey}-#{$directionKey}-#{$i}-#{$sizeKey} {
           border-#{$direction}: $i * 2px $type $size;
         }
@@ -67,7 +67,7 @@
 
 // // 字体模型
 // f12 font-size:12px;
-@for $i from $fontSizeStart to $fontSizeEnd {
+@for $i from $font-size-start to $font-size-end {
   .f#{$i} {
     font-size: $i * 2rpx;
   }
@@ -81,7 +81,9 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-    } @else {
+    }
+
+    @else {
       display: box;
       -webkit-line-clamp: $i;
       min-width: 0;

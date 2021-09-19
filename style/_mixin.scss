@@ -30,9 +30,13 @@
   @if $flex !=null {
     @if $flex==full {
       flex: auto;
-    } @else if $flex==keep {
+    }
+
+    @else if $flex==keep {
       flex: none;
-    } @else {
+    }
+
+    @else {
       @include flexError($flex, 'flex-self');
     }
   }
@@ -47,13 +51,13 @@
 }
 
 // flex错误提示
-@mixin flexError($param, $type) {
+@mixin flex-error($param, $type) {
   background-color: #ff3c00 !important;
   overflow: hidden;
   position: relative;
 
   &::after {
-    background-color: white !important;
+    background-color: #fff !important;
     bottom: 0;
     color: #ff3c00 !important;
     content: 'ErrorParam: #{$param} in #{$type}';
@@ -68,13 +72,21 @@
 @mixin flex-direction($direction: row) {
   @if $direction==column {
     flex-direction: column;
-  } @else if $direction==row {
+  }
+
+  @else if $direction==row {
     flex-direction: row;
-  } @else if $direction==row-reverse {
+  }
+
+  @else if $direction==row-reverse {
     flex-direction: row-reverse;
-  } @else if $direction==column-reverse {
+  }
+
+  @else if $direction==column-reverse {
     flex-direction: column-reverse;
-  } @else {
+  }
+
+  @else {
     @include flexError($direction, 'flex-direction');
   }
 }
@@ -83,15 +95,25 @@
 @mixin flex-justify($justify: start) {
   @if $justify==start {
     justify-content: start;
-  } @else if $justify==center {
+  }
+
+  @else if $justify==center {
     justify-content: center;
-  } @else if $justify==end {
+  }
+
+  @else if $justify==end {
     justify-content: flex-end;
-  } @else if $justify==between {
+  }
+
+  @else if $justify==between {
     justify-content: space-between;
-  } @else if $justify==around {
+  }
+
+  @else if $justify==around {
     justify-content: space-around;
-  } @else {
+  }
+
+  @else {
     @include flexError($justify, 'flex-justify');
   }
 }
@@ -100,11 +122,17 @@
 @mixin flex-align($align: top) {
   @if $align==top {
     align-items: flex-start;
-  } @else if $align==center {
+  }
+
+  @else if $align==center {
     align-items: center;
-  } @else if $align==bottom {
+  }
+
+  @else if $align==bottom {
     align-items: flex-end;
-  } @else {
+  }
+
+  @else {
     @include flexError($align, 'flex-align');
   }
 }
@@ -113,49 +141,79 @@
 @mixin flex-warp($warp: wrap) {
   @if $warp==wrap {
     flex-wrap: wrap;
-  } @else if $warp==nowrap {
+  }
+
+  @else if $warp==nowrap {
     flex-wrap: nowrap;
-  } @else if $warp==wrap-reverse {
+  }
+
+  @else if $warp==wrap-reverse {
     flex-wrap: wrap-reverse;
-  } @else {
+  }
+
+  @else {
     @include flexError($warp, 'flex-wrap');
   }
 }
 
 // 换行多根轴线的对齐方式,如果项目只有一根轴线，该属性不起作用
-@mixin flex-warpAlign($align: stretch) {
+@mixin flex-warp-align($align: stretch) {
   @if $align==stretch {
     align-content: stretch;
-  } @else if $align==top {
+  }
+
+  @else if $align==top {
     align-content: flex-start;
-  } @else if $align==center {
+  }
+
+  @else if $align==center {
     align-content: center;
-  } @else if $align==bottom {
+  }
+
+  @else if $align==bottom {
     align-content: flex-end;
-  } @else if $align==between {
+  }
+
+  @else if $align==between {
     align-content: space-between;
-  } @else if $align==around {
+  }
+
+  @else if $align==around {
     align-content: space-around;
-  } @else {
+  }
+
+  @else {
     @include flexError($align, 'flex-wrapAlign');
   }
 }
 
 // 单个项目有与其他项目不一样的对齐方式
-@mixin flex-selfAlign($align: auto) {
+@mixin flex-self-align($align: auto) {
   @if $align==auto {
     align-self: auto;
-  } @else if $align==top {
+  }
+
+  @else if $align==top {
     align-self: flex-start;
-  } @else if $align==center {
+  }
+
+  @else if $align==center {
     align-self: center;
-  } @else if $align==bottom {
+  }
+
+  @else if $align==bottom {
     align-self: flex-end;
-  } @else if $align==baseline {
+  }
+
+  @else if $align==baseline {
     align-self: baseline;
-  } @else if $align==stretch {
+  }
+
+  @else if $align==stretch {
     align-self: stretch;
-  } @else {
+  }
+
+  @else {
     @include flexError($align, 'flex-self-align');
   }
 }
@@ -164,7 +222,9 @@
 @mixin flex-order($order: 0) {
   @if $order==round($order) {
     order: $order;
-  } @else {
+  }
+
+  @else {
     @include flexError($order, 'flex-self-order');
   }
 }
@@ -178,26 +238,14 @@
   /* Mozilla Firefox */
   background-image: linear-gradient($from, $to);
 
-  /* Opera */
-  background-image: linear-gradient($from, $to);
-
   /* WebKit (Safari 4+, Chrome 1+) */
-  background-image: -webkit-gradient(
-    linear,
+  background-image:
+    -webkit-gradient
+    (linear,
     left top,
     left bottom,
     color-stop(0, $from),
-    color-stop(1, $to)
-  );
-
-  /* WebKit (Chrome 11+) */
-  background-image: linear-gradient($from, $to);
-
-  /* IE10 */
-  background-image: linear-gradient($from, $to);
-
-  /* W3C */
-  background-image: linear-gradient($from, $to);
+    color-stop(1, $to));
 }
 
 /**
@@ -209,7 +257,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  } @else {
+  }
+
+  @else {
     display: box;
     -webkit-line-clamp: $rowCount;
     min-width: 0;

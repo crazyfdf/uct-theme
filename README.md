@@ -6,5 +6,5 @@
 
 ```
 @import './uct-theme.scss';//导入生成的uct-theme
-@import 'uct-theme';
+@import 'uct-theme/index.scss';
 ```
