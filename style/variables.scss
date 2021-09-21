@@ -49,7 +49,9 @@ $border-types: (
 // flex变量
 $flex-direction: (
   x:row,
-  y:column
+  xr:row-reverse,
+  y:column,
+  yr:column-reverse
 );
 $flex-justify: (
   s:flex-start,
