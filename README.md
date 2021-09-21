@@ -10,12 +10,10 @@
 ```
 
 4. 使用
-<head>
-   <style>
-    @import './index.css';
-   </style>
-   </head>
-   <div class='mt10 c-red'>mt10 c-red</div>
+
+```
+<div class='mt10 c-red'>mt10 c-red</div>
+```
 
 ```
 // 偏移
