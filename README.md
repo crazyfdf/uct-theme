@@ -33,4 +33,7 @@
 //文本溢出省略
 // more-t3
 
+// flex
+// (x|y)-j(s|c|e|sb|sa)-a(s|c|e|baseline|stretch)
+// x-jsb-as: display: flex;flex-direction:row;justify-content:space-between;align-items:flex-start;
 ```

@@ -45,3 +45,23 @@ $border-types: (
   s: solid,
   d: dashed,
 );
+
+// flex变量
+$flex-direction: (
+  x:row,
+  y:column
+);
+$flex-justify: (
+  s:flex-start,
+  c:center,
+  e:flex-end,
+  sb:space-between,
+  sa:space-around,
+);
+$flex-align: (
+  s:flex-start,
+  c:center,
+  e:flex-end,
+  baseline:baseline,
+  stretch:stretch
+);

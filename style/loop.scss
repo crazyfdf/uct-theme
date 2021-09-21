@@ -93,3 +93,18 @@
     }
   }
 }
+
+// flex
+// x-jsb-as: display: flex;flex-direction:row;justify-content:space-between;align-items:flex-start;
+@each $direction-key,$direction in $flex-direction {
+  @each $justify-key,$justify in $flex-justify {
+    @each $align-key,$align in $flex-align {
+      #{$direction-key}-j#{$justify-key}-a#{$align-key} {
+        align-items: $align;
+        display: flex;
+        flex-direction: $direction;
+        justify-content: $justify;
+      }
+    }
+  }
+}
