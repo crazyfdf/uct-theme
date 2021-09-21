@@ -99,7 +99,7 @@
 @each $direction-key,$direction in $flex-direction {
   @each $justify-key,$justify in $flex-justify {
     @each $align-key,$align in $flex-align {
-      .#{$direction-key}-j#{$justify-key}-a#{$align-key} {
+      .f#{$direction-key}-j#{$justify-key}-a#{$align-key} {
         align-items: $align;
         display: flex;
         flex-direction: $direction;
