@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 // 偏移
 @each $typeKey, $type in $space-types {
   @each $sizeKey, $size in $space-sizes {
@@ -118,7 +120,6 @@
     }
 
     @else {
-      // stylelint-disable 
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: $j;
@@ -149,10 +150,10 @@
   @each $i,$j in $grid-sizes {
     .g#{$direction-key}-#{$i} {
       display: grid;
-      grid-template-#{$direction}: repeat($j, minmax(0, 1fr));
       @if $direction=='rows' {
         grid-auto-flow:column;
       }
+      grid-template-#{$direction}: repeat($j, minmax(0, 1fr));
     }
   }
 }

@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 // flex布局
 
 // flex(主轴,交叉轴,方向,换行,多轴线对齐)
@@ -257,7 +259,6 @@
   }
 
   @else {
-    // stylelint-disable 
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: $rowCount;

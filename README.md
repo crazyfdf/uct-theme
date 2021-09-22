@@ -84,8 +84,8 @@
   gy-1
   {
     display:grid;
-    grid-template-rows: repeat(1, minmax(0, 1fr));
     grid-auto-flow:column;
+    grid-template-rows: repeat(1, minmax(0, 1fr));
   }
    gx-1
   {
