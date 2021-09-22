@@ -43,7 +43,17 @@ $color-sizes: (
 // 边框变量
 $border-types: (
   s: solid,
-  d: dashed,
+  ds: dashed,
+  dt:dotted,
+  db:double
+);
+
+// 圆角变量
+$radius-types: (
+  tl:'top-left',
+  tr:'top-right',
+  bl:'bottom-left',
+  br:'bottom-right'
 );
 
 // flex变量
@@ -64,6 +74,12 @@ $flex-align: (
   s:flex-start,
   c:center,
   e:flex-end,
-  baseline:baseline,
-  stretch:stretch
+  bl:baseline,
+  st:stretch
+);
+
+// grid变量
+$grid-direction: (
+  x:columns,
+  y:rows,
 );

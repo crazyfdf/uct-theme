@@ -1,33 +1,33 @@
-// 偏移模型
+// 偏移
 @each $typeKey, $type in $space-types {
   @each $sizeKey, $size in $space-sizes {
-    // mt10 margin-top:10px
+    // mt10 margin-top:10px;
     @each $directionKey, $direction in $space-directions {
-      .#{$typeKey}#{$directionKey}#{""+$sizeKey} {
+      .#{$typeKey}#{$directionKey}#{$sizeKey} {
         #{$type}-#{$direction}: $size* $unit;
       }
     }
 
     // mx10 margin: 10px 0;
-    .#{$typeKey}x#{""+$sizeKey} {
+    .#{$typeKey}x#{$sizeKey} {
       #{$type}-left: $size* $unit;
       #{$type}-right: $size* $unit;
     }
 
     // my10 margin: 0 10px;
-    .#{$typeKey}y#{""+$sizeKey} {
-      #{$type}-top: $size* $unit;
+    .#{$typeKey}y#{$sizeKey} {
       #{$type}-bottom: $size* $unit;
+      #{$type}-top: $size* $unit;
     }
 
-    // ma10 margin: 10px ;
-    .#{$typeKey}a#{""+$sizeKey} {
+    // m10 margin: 10px;
+    .#{$typeKey}#{$sizeKey} {
       #{$type}: $size* $unit;
     }
   }
 }
 
-// 颜色模型
+// 颜色
 @each $typeKey, $type in $color-types {
   // c-red  color:red;
   // bc-red background-color: red;
@@ -37,7 +37,7 @@
     }
 
     // bc-red-1 background-color: rgba(red,.1);
-    @for $i from 1 to 11 {
+    @for $i from 1 to 10 {
       .#{$typeKey}-#{""+$sizeKey}-#{$i} {
         #{$type}: rgba($size, $i/10);
       }
@@ -45,39 +45,73 @@
   }
 }
 
-// 边框模型
-
+// 边框
 @each $typeKey, $type in $border-types {
   @each $sizeKey, $size in $color-sizes {
-    @for $i from 1 to 2 {
+    @each $i,$j in $border-sizes {
       // bs-1-red border:1px solid red
       .b#{$typeKey}-#{$i}-#{""+$sizeKey} {
-        border: $i * $unit $type $size;
+        border: $j * $unit $type $size;
       }
 
       // bs-t-1-red border-top:1px solid red
       @each $directionKey, $direction in $space-directions {
         .b#{$typeKey}-#{$directionKey}-#{$i}-#{""+$sizeKey} {
-          border-#{$direction}: $i * $unit $type $size;
+          border-#{$direction}: $j * $unit $type $size;
         }
       }
     }
   }
 }
 
-// // 字体模型
-// f12 font-size:12px;
-@for $i from $font-size-start to $font-size-end {
-  .f#{$i} {
-    font-size: $i * $unit;
+// 圆角
+@each $sizeKey,$size in $radius-sizes {
+  // rtl10 border-top-left:10px;
+  @each $directionKey, $direction in $radius-types {
+    .r#{$directionKey}#{$sizeKey} {
+      border-#{$direction}-radius: $size * $unit;
+    }
+  }
+
+  // rt10 border-radius:10px 10px 0 0;
+  .rt#{$sizeKey} {
+    border-radius: $size * $unit $size * $unit 0 0;
+  }
+
+  // rl10 border-radius: 10px 0 0 10px;
+  .rl#{$sizeKey} {
+    border-radius: $size * $unit 0 0  $size * $unit;
+  }
+
+  // rr10 border-radius: 0 10px 10px 0;
+  .rr#{$sizeKey} {
+    border-radius: 0 $size * $unit $size * $unit 0;
+  }
+
+  // rb10 border-radius: 0 0 10px 10px;
+  .rb#{$sizeKey} {
+    border-radius: 0 0 $size * $unit $size * $unit;
+  }
+
+  // r10 border-radius: 10px;
+  .r#{$sizeKey} {
+    border-radius: $size * $unit;
   }
 }
 
-//文本溢出省略
+// 字体
+// f12 font-size:12px;
+@each $i,$j in $font-size {
+  .f#{$i} {
+    font-size: $j * $unit;
+  }
+}
+
+// 文本溢出省略
 // more-t3
-@for $i from 1 to 5 {
+@each $i,$j in $omit-sizes {
   .more-t#{$i} {
-    @if $i <=1 {
+    @if $j == 1 {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -85,11 +119,10 @@
 
     @else {
       display: box;
-      -webkit-line-clamp: $i;
+      -webkit-line-clamp: $j;
       min-width: 0;
       overflow: hidden;
       text-overflow: ellipsis;
-      transition: all linear 0.2s;
     }
   }
 }
@@ -99,12 +132,39 @@
 @each $direction-key,$direction in $flex-direction {
   @each $justify-key,$justify in $flex-justify {
     @each $align-key,$align in $flex-align {
-      .f#{$direction-key}-j#{$justify-key}-a#{$align-key} {
+      .f#{$direction-key}-#{$justify-key}-#{$align-key} {
         align-items: $align;
         display: flex;
         flex-direction: $direction;
         justify-content: $justify;
       }
     }
+  }
+}
+
+// grid
+// gy1 grid-template-rows: 1;
+@each $direction-key,$direction in $grid-direction {
+  @each $i,$j in $grid-sizes {
+    .g#{$direction-key}-#{$i} {
+      display: grid;
+      grid-template-#{$direction}: $j;
+    }
+  }
+}
+
+// gap
+@each $i,$j in $gap-sizes {
+  // gap10 gap: 10px;
+  .gap#{$i} {
+    gap: $j * $unit;
+  }
+  // gapx20 column-gap: 20px;
+  .gapx#{$i} {
+    column-gap: $j * $unit;
+  }
+  // gapy40 row-gap: 40px;
+  .gapy#{$i} {
+    row-gap: $j * $unit;
   }
 }
