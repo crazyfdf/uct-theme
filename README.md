@@ -62,9 +62,9 @@
   }
   more-t3
   {
-    display: box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -84,7 +84,13 @@
   gy-1
   {
     display:grid;
-    grid-template-rows: 1;
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    grid-auto-flow:column;
+  }
+   gx-1
+  {
+    display:grid;
+    grid-template-column: repeat(1, minmax(0, 1fr));
   }
 
 // gap

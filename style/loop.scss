@@ -118,9 +118,10 @@
     }
 
     @else {
-      display: box;
+      // stylelint-disable 
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
       -webkit-line-clamp: $j;
-      min-width: 0;
       overflow: hidden;
       text-overflow: ellipsis;
     }
@@ -128,7 +129,7 @@
 }
 
 // flex
-// x-jsb-as: display: flex;flex-direction:row;justify-content:space-between;align-items:flex-start;
+// fx-sb-s: display: flex;flex-direction:row;justify-content:space-between;align-items:flex-start;
 @each $direction-key,$direction in $flex-direction {
   @each $justify-key,$justify in $flex-justify {
     @each $align-key,$align in $flex-align {
@@ -143,12 +144,15 @@
 }
 
 // grid
-// gy1 grid-template-rows: 1;
+// gy1 grid-template-rows: repeat(1, minmax(0, 1fr));;
 @each $direction-key,$direction in $grid-direction {
   @each $i,$j in $grid-sizes {
     .g#{$direction-key}-#{$i} {
       display: grid;
-      grid-template-#{$direction}: $j;
+      grid-template-#{$direction}: repeat($j, minmax(0, 1fr));
+      @if $direction=='rows' {
+        grid-auto-flow:column;
+      }
     }
   }
 }

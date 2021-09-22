@@ -1,8 +1,3 @@
-@charset "UTF-8";
-/**
-* 溢出省略号
-* @param {Number} 行数
-*/
 .mt2 {
   margin-top: 2px;
 }
@@ -6262,25 +6257,25 @@
 }
 
 .more-t2 {
-  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .more-t3 {
-  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .more-t4 {
-  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
-  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -6987,62 +6982,68 @@
 
 .gx-1 {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .gx-2 {
   display: grid;
-  grid-template-columns: 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .gx-3 {
   display: grid;
-  grid-template-columns: 3;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .gx-4 {
   display: grid;
-  grid-template-columns: 4;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .gx-5 {
   display: grid;
-  grid-template-columns: 5;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .gx-6 {
   display: grid;
-  grid-template-columns: 6;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .gy-1 {
   display: grid;
-  grid-template-rows: 1;
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  grid-auto-flow: column;
 }
 
 .gy-2 {
   display: grid;
-  grid-template-rows: 2;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-auto-flow: column;
 }
 
 .gy-3 {
   display: grid;
-  grid-template-rows: 3;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: column;
 }
 
 .gy-4 {
   display: grid;
-  grid-template-rows: 4;
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  grid-auto-flow: column;
 }
 
 .gy-5 {
   display: grid;
-  grid-template-rows: 5;
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+  grid-auto-flow: column;
 }
 
 .gy-6 {
   display: grid;
-  grid-template-rows: 6;
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  grid-auto-flow: column;
 }
 
 .gap10 {
