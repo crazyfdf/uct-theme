@@ -41,7 +41,7 @@
 
 // 圆角
   br-[t|l|r|b|tl|tr|bl|br]-<$radius-sizes>
-  br-t-l10 border-top-left:10px;
+  br-tl-l10 border-top-left-radius:10px;
   br-t-10 border-radius:10px 10px 0 0;
   br-l-10 border-radius: 10px 0 0 10px;
   br-r-10 border-radius: 0 10px 10px 0;

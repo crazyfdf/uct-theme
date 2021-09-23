@@ -68,7 +68,7 @@
 
 // 圆角
 @each $sizeKey,$size in $radius-sizes {
-  // br-tl-10 border-top-left:10px;
+  // br-tl-10 border-top-left-radius:10px;
   @each $directionKey, $direction in $radius-types {
     .br-#{$directionKey}-#{$sizeKey} {
       border-#{$direction}-radius: $size * $unit;
