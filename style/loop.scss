@@ -3,27 +3,27 @@
 // 偏移
 @each $typeKey, $type in $space-types {
   @each $sizeKey, $size in $space-sizes {
-    // mt10 margin-top:10px;
+    // m-t-10 margin-top:10px;
     @each $directionKey, $direction in $space-directions {
-      .#{$typeKey}#{$directionKey}#{$sizeKey} {
+      .#{$typeKey}-#{$directionKey}-#{$sizeKey} {
         #{$type}-#{$direction}: $size* $unit;
       }
     }
 
-    // mx10 margin: 10px 0;
-    .#{$typeKey}x#{$sizeKey} {
+    // m-x-10 margin: 10px 0;
+    .#{$typeKey}-x-#{$sizeKey} {
       #{$type}-left: $size* $unit;
       #{$type}-right: $size* $unit;
     }
 
-    // my10 margin: 0 10px;
-    .#{$typeKey}y#{$sizeKey} {
+    // m-y-10 margin: 0 10px;
+    .#{$typeKey}-y-#{$sizeKey} {
       #{$type}-bottom: $size* $unit;
       #{$type}-top: $size* $unit;
     }
 
-    // m10 margin: 10px;
-    .#{$typeKey}#{$sizeKey} {
+    // m-10 margin: 10px;
+    .#{$typeKey}-#{$sizeKey} {
       #{$type}: $size* $unit;
     }
   }
@@ -51,14 +51,14 @@
 @each $typeKey, $type in $border-types {
   @each $sizeKey, $size in $color-sizes {
     @each $i,$j in $border-sizes {
-      // bs-1-red border:1px solid red
-      .b#{$typeKey}-#{$i}-#{""+$sizeKey} {
+      // border-s-1-red border:1px solid red;
+      .border-#{$typeKey}-#{$i}-#{""+$sizeKey} {
         border: $j * $unit $type $size;
       }
 
-      // bs-t-1-red border-top:1px solid red
+      // border-s-t-1-red border-top:1px solid red;
       @each $directionKey, $direction in $space-directions {
-        .b#{$typeKey}-#{$directionKey}-#{$i}-#{""+$sizeKey} {
+        .border-#{$typeKey}-#{$directionKey}-#{$i}-#{""+$sizeKey} {
           border-#{$direction}: $j * $unit $type $size;
         }
       }
@@ -68,51 +68,51 @@
 
 // 圆角
 @each $sizeKey,$size in $radius-sizes {
-  // rtl10 border-top-left:10px;
+  // br-tl-10 border-top-left:10px;
   @each $directionKey, $direction in $radius-types {
-    .r#{$directionKey}#{$sizeKey} {
+    .br-#{$directionKey}-#{$sizeKey} {
       border-#{$direction}-radius: $size * $unit;
     }
   }
 
-  // rt10 border-radius:10px 10px 0 0;
-  .rt#{$sizeKey} {
+  // br-t-10 border-radius:10px 10px 0 0;
+  .br-t-#{$sizeKey} {
     border-radius: $size * $unit $size * $unit 0 0;
   }
 
-  // rl10 border-radius: 10px 0 0 10px;
-  .rl#{$sizeKey} {
+  // br-l-10 border-radius: 10px 0 0 10px;
+  .br-l-#{$sizeKey} {
     border-radius: $size * $unit 0 0  $size * $unit;
   }
 
-  // rr10 border-radius: 0 10px 10px 0;
-  .rr#{$sizeKey} {
+  // br-r-10 border-radius: 0 10px 10px 0;
+  .br-r-#{$sizeKey} {
     border-radius: 0 $size * $unit $size * $unit 0;
   }
 
-  // rb10 border-radius: 0 0 10px 10px;
-  .rb#{$sizeKey} {
+  // br-b-10 border-radius: 0 0 10px 10px;
+  .br-b-#{$sizeKey} {
     border-radius: 0 0 $size * $unit $size * $unit;
   }
 
-  // r10 border-radius: 10px;
-  .r#{$sizeKey} {
+  // br-10 border-radius: 10px;
+  .br-#{$sizeKey} {
     border-radius: $size * $unit;
   }
 }
 
 // 字体
-// f12 font-size:12px;
+// f-12 font-size:12px;
 @each $i,$j in $font-size {
-  .f#{$i} {
+  .font-#{$i} {
     font-size: $j * $unit;
   }
 }
 
 // 文本溢出省略
-// more-t3
+// more-3
 @each $i,$j in $omit-sizes {
-  .more-t#{$i} {
+  .more-#{$i} {
     @if $j == 1 {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -130,11 +130,11 @@
 }
 
 // flex
-// fx-sb-s: display: flex;flex-direction:row;justify-content:space-between;align-items:flex-start;
+// flex-x-sb-s: display: flex;flex-direction:row;justify-content:space-between;align-items:flex-start;
 @each $direction-key,$direction in $flex-direction {
   @each $justify-key,$justify in $flex-justify {
     @each $align-key,$align in $flex-align {
-      .f#{$direction-key}-#{$justify-key}-#{$align-key} {
+      .flex-#{$direction-key}-#{$justify-key}-#{$align-key} {
         align-items: $align;
         display: flex;
         flex-direction: $direction;
@@ -145,10 +145,10 @@
 }
 
 // grid
-// gy1 grid-template-rows: repeat(1, minmax(0, 1fr));;
+// grid-y-1 grid-template-rows: repeat(1, minmax(0, 1fr));;
 @each $direction-key,$direction in $grid-direction {
   @each $i,$j in $grid-sizes {
-    .g#{$direction-key}-#{$i} {
+    .grid-#{$direction-key}-#{$i} {
       display: grid;
       @if $direction=='rows' {
         grid-auto-flow:column;
@@ -160,16 +160,16 @@
 
 // gap
 @each $i,$j in $gap-sizes {
-  // gap10 gap: 10px;
-  .gap#{$i} {
+  // gap-10 gap: 10px;
+  .gap-#{$i} {
     gap: $j * $unit;
   }
-  // gapx20 column-gap: 20px;
-  .gapx#{$i} {
+  // gap-x-20 column-gap: 20px;
+  .gap-x-#{$i} {
     column-gap: $j * $unit;
   }
-  // gapy40 row-gap: 40px;
-  .gapy#{$i} {
+  // gap-y-40 row-gap: 40px;
+  .gap-y-#{$i} {
     row-gap: $j * $unit;
   }
 }
