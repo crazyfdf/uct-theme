@@ -902,43 +902,43 @@
   }
 
   .bc-primary {
-    background-color: #2979ff;
+    background-color: #123;
   }
 
   .bc-primary-1 {
-    background-color: rgba(41, 121, 255, 0.1);
+    background-color: rgba(17, 34, 51, 0.1);
   }
 
   .bc-primary-2 {
-    background-color: rgba(41, 121, 255, 0.2);
+    background-color: rgba(17, 34, 51, 0.2);
   }
 
   .bc-primary-3 {
-    background-color: rgba(41, 121, 255, 0.3);
+    background-color: rgba(17, 34, 51, 0.3);
   }
 
   .bc-primary-4 {
-    background-color: rgba(41, 121, 255, 0.4);
+    background-color: rgba(17, 34, 51, 0.4);
   }
 
   .bc-primary-5 {
-    background-color: rgba(41, 121, 255, 0.5);
+    background-color: rgba(17, 34, 51, 0.5);
   }
 
   .bc-primary-6 {
-    background-color: rgba(41, 121, 255, 0.6);
+    background-color: rgba(17, 34, 51, 0.6);
   }
 
   .bc-primary-7 {
-    background-color: rgba(41, 121, 255, 0.7);
+    background-color: rgba(17, 34, 51, 0.7);
   }
 
   .bc-primary-8 {
-    background-color: rgba(41, 121, 255, 0.8);
+    background-color: rgba(17, 34, 51, 0.8);
   }
 
   .bc-primary-9 {
-    background-color: rgba(41, 121, 255, 0.9);
+    background-color: rgba(17, 34, 51, 0.9);
   }
 
   .bc-success {
@@ -1742,43 +1742,43 @@
   }
 
   .c-primary {
-    color: #2979ff;
+    color: #123;
   }
 
   .c-primary-1 {
-    color: rgba(41, 121, 255, 0.1);
+    color: rgba(17, 34, 51, 0.1);
   }
 
   .c-primary-2 {
-    color: rgba(41, 121, 255, 0.2);
+    color: rgba(17, 34, 51, 0.2);
   }
 
   .c-primary-3 {
-    color: rgba(41, 121, 255, 0.3);
+    color: rgba(17, 34, 51, 0.3);
   }
 
   .c-primary-4 {
-    color: rgba(41, 121, 255, 0.4);
+    color: rgba(17, 34, 51, 0.4);
   }
 
   .c-primary-5 {
-    color: rgba(41, 121, 255, 0.5);
+    color: rgba(17, 34, 51, 0.5);
   }
 
   .c-primary-6 {
-    color: rgba(41, 121, 255, 0.6);
+    color: rgba(17, 34, 51, 0.6);
   }
 
   .c-primary-7 {
-    color: rgba(41, 121, 255, 0.7);
+    color: rgba(17, 34, 51, 0.7);
   }
 
   .c-primary-8 {
-    color: rgba(41, 121, 255, 0.8);
+    color: rgba(17, 34, 51, 0.8);
   }
 
   .c-primary-9 {
-    color: rgba(41, 121, 255, 0.9);
+    color: rgba(17, 34, 51, 0.9);
   }
 
   .c-success {
@@ -2582,43 +2582,43 @@
   }
 
   .border-s-1-primary {
-    border: 1px solid #2979ff;
+    border: 1px solid #123;
   }
 
   .border-s-t-1-primary {
-    border-top: 1px solid #2979ff;
+    border-top: 1px solid #123;
   }
 
   .border-s-r-1-primary {
-    border-right: 1px solid #2979ff;
+    border-right: 1px solid #123;
   }
 
   .border-s-b-1-primary {
-    border-bottom: 1px solid #2979ff;
+    border-bottom: 1px solid #123;
   }
 
   .border-s-l-1-primary {
-    border-left: 1px solid #2979ff;
+    border-left: 1px solid #123;
   }
 
   .border-s-2-primary {
-    border: 2px solid #2979ff;
+    border: 2px solid #123;
   }
 
   .border-s-t-2-primary {
-    border-top: 2px solid #2979ff;
+    border-top: 2px solid #123;
   }
 
   .border-s-r-2-primary {
-    border-right: 2px solid #2979ff;
+    border-right: 2px solid #123;
   }
 
   .border-s-b-2-primary {
-    border-bottom: 2px solid #2979ff;
+    border-bottom: 2px solid #123;
   }
 
   .border-s-l-2-primary {
-    border-left: 2px solid #2979ff;
+    border-left: 2px solid #123;
   }
 
   .border-s-1-success {
@@ -3422,43 +3422,43 @@
   }
 
   .border-ds-1-primary {
-    border: 1px dashed #2979ff;
+    border: 1px dashed #123;
   }
 
   .border-ds-t-1-primary {
-    border-top: 1px dashed #2979ff;
+    border-top: 1px dashed #123;
   }
 
   .border-ds-r-1-primary {
-    border-right: 1px dashed #2979ff;
+    border-right: 1px dashed #123;
   }
 
   .border-ds-b-1-primary {
-    border-bottom: 1px dashed #2979ff;
+    border-bottom: 1px dashed #123;
   }
 
   .border-ds-l-1-primary {
-    border-left: 1px dashed #2979ff;
+    border-left: 1px dashed #123;
   }
 
   .border-ds-2-primary {
-    border: 2px dashed #2979ff;
+    border: 2px dashed #123;
   }
 
   .border-ds-t-2-primary {
-    border-top: 2px dashed #2979ff;
+    border-top: 2px dashed #123;
   }
 
   .border-ds-r-2-primary {
-    border-right: 2px dashed #2979ff;
+    border-right: 2px dashed #123;
   }
 
   .border-ds-b-2-primary {
-    border-bottom: 2px dashed #2979ff;
+    border-bottom: 2px dashed #123;
   }
 
   .border-ds-l-2-primary {
-    border-left: 2px dashed #2979ff;
+    border-left: 2px dashed #123;
   }
 
   .border-ds-1-success {
@@ -4262,43 +4262,43 @@
   }
 
   .border-dt-1-primary {
-    border: 1px dotted #2979ff;
+    border: 1px dotted #123;
   }
 
   .border-dt-t-1-primary {
-    border-top: 1px dotted #2979ff;
+    border-top: 1px dotted #123;
   }
 
   .border-dt-r-1-primary {
-    border-right: 1px dotted #2979ff;
+    border-right: 1px dotted #123;
   }
 
   .border-dt-b-1-primary {
-    border-bottom: 1px dotted #2979ff;
+    border-bottom: 1px dotted #123;
   }
 
   .border-dt-l-1-primary {
-    border-left: 1px dotted #2979ff;
+    border-left: 1px dotted #123;
   }
 
   .border-dt-2-primary {
-    border: 2px dotted #2979ff;
+    border: 2px dotted #123;
   }
 
   .border-dt-t-2-primary {
-    border-top: 2px dotted #2979ff;
+    border-top: 2px dotted #123;
   }
 
   .border-dt-r-2-primary {
-    border-right: 2px dotted #2979ff;
+    border-right: 2px dotted #123;
   }
 
   .border-dt-b-2-primary {
-    border-bottom: 2px dotted #2979ff;
+    border-bottom: 2px dotted #123;
   }
 
   .border-dt-l-2-primary {
-    border-left: 2px dotted #2979ff;
+    border-left: 2px dotted #123;
   }
 
   .border-dt-1-success {
@@ -5102,43 +5102,43 @@
   }
 
   .border-db-1-primary {
-    border: 1px double #2979ff;
+    border: 1px double #123;
   }
 
   .border-db-t-1-primary {
-    border-top: 1px double #2979ff;
+    border-top: 1px double #123;
   }
 
   .border-db-r-1-primary {
-    border-right: 1px double #2979ff;
+    border-right: 1px double #123;
   }
 
   .border-db-b-1-primary {
-    border-bottom: 1px double #2979ff;
+    border-bottom: 1px double #123;
   }
 
   .border-db-l-1-primary {
-    border-left: 1px double #2979ff;
+    border-left: 1px double #123;
   }
 
   .border-db-2-primary {
-    border: 2px double #2979ff;
+    border: 2px double #123;
   }
 
   .border-db-t-2-primary {
-    border-top: 2px double #2979ff;
+    border-top: 2px double #123;
   }
 
   .border-db-r-2-primary {
-    border-right: 2px double #2979ff;
+    border-right: 2px double #123;
   }
 
   .border-db-b-2-primary {
-    border-bottom: 2px double #2979ff;
+    border-bottom: 2px double #123;
   }
 
   .border-db-l-2-primary {
-    border-left: 2px double #2979ff;
+    border-left: 2px double #123;
   }
 
   .border-db-1-success {
@@ -8011,43 +8011,43 @@
   }
 
   .sm-bc-primary {
-    background-color: #2979ff;
+    background-color: #123;
   }
 
   .sm-bc-primary-1 {
-    background-color: rgba(41, 121, 255, 0.1);
+    background-color: rgba(17, 34, 51, 0.1);
   }
 
   .sm-bc-primary-2 {
-    background-color: rgba(41, 121, 255, 0.2);
+    background-color: rgba(17, 34, 51, 0.2);
   }
 
   .sm-bc-primary-3 {
-    background-color: rgba(41, 121, 255, 0.3);
+    background-color: rgba(17, 34, 51, 0.3);
   }
 
   .sm-bc-primary-4 {
-    background-color: rgba(41, 121, 255, 0.4);
+    background-color: rgba(17, 34, 51, 0.4);
   }
 
   .sm-bc-primary-5 {
-    background-color: rgba(41, 121, 255, 0.5);
+    background-color: rgba(17, 34, 51, 0.5);
   }
 
   .sm-bc-primary-6 {
-    background-color: rgba(41, 121, 255, 0.6);
+    background-color: rgba(17, 34, 51, 0.6);
   }
 
   .sm-bc-primary-7 {
-    background-color: rgba(41, 121, 255, 0.7);
+    background-color: rgba(17, 34, 51, 0.7);
   }
 
   .sm-bc-primary-8 {
-    background-color: rgba(41, 121, 255, 0.8);
+    background-color: rgba(17, 34, 51, 0.8);
   }
 
   .sm-bc-primary-9 {
-    background-color: rgba(41, 121, 255, 0.9);
+    background-color: rgba(17, 34, 51, 0.9);
   }
 
   .sm-bc-success {
@@ -8851,43 +8851,43 @@
   }
 
   .sm-c-primary {
-    color: #2979ff;
+    color: #123;
   }
 
   .sm-c-primary-1 {
-    color: rgba(41, 121, 255, 0.1);
+    color: rgba(17, 34, 51, 0.1);
   }
 
   .sm-c-primary-2 {
-    color: rgba(41, 121, 255, 0.2);
+    color: rgba(17, 34, 51, 0.2);
   }
 
   .sm-c-primary-3 {
-    color: rgba(41, 121, 255, 0.3);
+    color: rgba(17, 34, 51, 0.3);
   }
 
   .sm-c-primary-4 {
-    color: rgba(41, 121, 255, 0.4);
+    color: rgba(17, 34, 51, 0.4);
   }
 
   .sm-c-primary-5 {
-    color: rgba(41, 121, 255, 0.5);
+    color: rgba(17, 34, 51, 0.5);
   }
 
   .sm-c-primary-6 {
-    color: rgba(41, 121, 255, 0.6);
+    color: rgba(17, 34, 51, 0.6);
   }
 
   .sm-c-primary-7 {
-    color: rgba(41, 121, 255, 0.7);
+    color: rgba(17, 34, 51, 0.7);
   }
 
   .sm-c-primary-8 {
-    color: rgba(41, 121, 255, 0.8);
+    color: rgba(17, 34, 51, 0.8);
   }
 
   .sm-c-primary-9 {
-    color: rgba(41, 121, 255, 0.9);
+    color: rgba(17, 34, 51, 0.9);
   }
 
   .sm-c-success {
@@ -9691,43 +9691,43 @@
   }
 
   .sm-border-s-1-primary {
-    border: 1px solid #2979ff;
+    border: 1px solid #123;
   }
 
   .sm-border-s-t-1-primary {
-    border-top: 1px solid #2979ff;
+    border-top: 1px solid #123;
   }
 
   .sm-border-s-r-1-primary {
-    border-right: 1px solid #2979ff;
+    border-right: 1px solid #123;
   }
 
   .sm-border-s-b-1-primary {
-    border-bottom: 1px solid #2979ff;
+    border-bottom: 1px solid #123;
   }
 
   .sm-border-s-l-1-primary {
-    border-left: 1px solid #2979ff;
+    border-left: 1px solid #123;
   }
 
   .sm-border-s-2-primary {
-    border: 2px solid #2979ff;
+    border: 2px solid #123;
   }
 
   .sm-border-s-t-2-primary {
-    border-top: 2px solid #2979ff;
+    border-top: 2px solid #123;
   }
 
   .sm-border-s-r-2-primary {
-    border-right: 2px solid #2979ff;
+    border-right: 2px solid #123;
   }
 
   .sm-border-s-b-2-primary {
-    border-bottom: 2px solid #2979ff;
+    border-bottom: 2px solid #123;
   }
 
   .sm-border-s-l-2-primary {
-    border-left: 2px solid #2979ff;
+    border-left: 2px solid #123;
   }
 
   .sm-border-s-1-success {
@@ -10531,43 +10531,43 @@
   }
 
   .sm-border-ds-1-primary {
-    border: 1px dashed #2979ff;
+    border: 1px dashed #123;
   }
 
   .sm-border-ds-t-1-primary {
-    border-top: 1px dashed #2979ff;
+    border-top: 1px dashed #123;
   }
 
   .sm-border-ds-r-1-primary {
-    border-right: 1px dashed #2979ff;
+    border-right: 1px dashed #123;
   }
 
   .sm-border-ds-b-1-primary {
-    border-bottom: 1px dashed #2979ff;
+    border-bottom: 1px dashed #123;
   }
 
   .sm-border-ds-l-1-primary {
-    border-left: 1px dashed #2979ff;
+    border-left: 1px dashed #123;
   }
 
   .sm-border-ds-2-primary {
-    border: 2px dashed #2979ff;
+    border: 2px dashed #123;
   }
 
   .sm-border-ds-t-2-primary {
-    border-top: 2px dashed #2979ff;
+    border-top: 2px dashed #123;
   }
 
   .sm-border-ds-r-2-primary {
-    border-right: 2px dashed #2979ff;
+    border-right: 2px dashed #123;
   }
 
   .sm-border-ds-b-2-primary {
-    border-bottom: 2px dashed #2979ff;
+    border-bottom: 2px dashed #123;
   }
 
   .sm-border-ds-l-2-primary {
-    border-left: 2px dashed #2979ff;
+    border-left: 2px dashed #123;
   }
 
   .sm-border-ds-1-success {
@@ -11371,43 +11371,43 @@
   }
 
   .sm-border-dt-1-primary {
-    border: 1px dotted #2979ff;
+    border: 1px dotted #123;
   }
 
   .sm-border-dt-t-1-primary {
-    border-top: 1px dotted #2979ff;
+    border-top: 1px dotted #123;
   }
 
   .sm-border-dt-r-1-primary {
-    border-right: 1px dotted #2979ff;
+    border-right: 1px dotted #123;
   }
 
   .sm-border-dt-b-1-primary {
-    border-bottom: 1px dotted #2979ff;
+    border-bottom: 1px dotted #123;
   }
 
   .sm-border-dt-l-1-primary {
-    border-left: 1px dotted #2979ff;
+    border-left: 1px dotted #123;
   }
 
   .sm-border-dt-2-primary {
-    border: 2px dotted #2979ff;
+    border: 2px dotted #123;
   }
 
   .sm-border-dt-t-2-primary {
-    border-top: 2px dotted #2979ff;
+    border-top: 2px dotted #123;
   }
 
   .sm-border-dt-r-2-primary {
-    border-right: 2px dotted #2979ff;
+    border-right: 2px dotted #123;
   }
 
   .sm-border-dt-b-2-primary {
-    border-bottom: 2px dotted #2979ff;
+    border-bottom: 2px dotted #123;
   }
 
   .sm-border-dt-l-2-primary {
-    border-left: 2px dotted #2979ff;
+    border-left: 2px dotted #123;
   }
 
   .sm-border-dt-1-success {
@@ -12211,43 +12211,43 @@
   }
 
   .sm-border-db-1-primary {
-    border: 1px double #2979ff;
+    border: 1px double #123;
   }
 
   .sm-border-db-t-1-primary {
-    border-top: 1px double #2979ff;
+    border-top: 1px double #123;
   }
 
   .sm-border-db-r-1-primary {
-    border-right: 1px double #2979ff;
+    border-right: 1px double #123;
   }
 
   .sm-border-db-b-1-primary {
-    border-bottom: 1px double #2979ff;
+    border-bottom: 1px double #123;
   }
 
   .sm-border-db-l-1-primary {
-    border-left: 1px double #2979ff;
+    border-left: 1px double #123;
   }
 
   .sm-border-db-2-primary {
-    border: 2px double #2979ff;
+    border: 2px double #123;
   }
 
   .sm-border-db-t-2-primary {
-    border-top: 2px double #2979ff;
+    border-top: 2px double #123;
   }
 
   .sm-border-db-r-2-primary {
-    border-right: 2px double #2979ff;
+    border-right: 2px double #123;
   }
 
   .sm-border-db-b-2-primary {
-    border-bottom: 2px double #2979ff;
+    border-bottom: 2px double #123;
   }
 
   .sm-border-db-l-2-primary {
-    border-left: 2px double #2979ff;
+    border-left: 2px double #123;
   }
 
   .sm-border-db-1-success {
@@ -15120,43 +15120,43 @@
   }
 
   .md-bc-primary {
-    background-color: #2979ff;
+    background-color: #123;
   }
 
   .md-bc-primary-1 {
-    background-color: rgba(41, 121, 255, 0.1);
+    background-color: rgba(17, 34, 51, 0.1);
   }
 
   .md-bc-primary-2 {
-    background-color: rgba(41, 121, 255, 0.2);
+    background-color: rgba(17, 34, 51, 0.2);
   }
 
   .md-bc-primary-3 {
-    background-color: rgba(41, 121, 255, 0.3);
+    background-color: rgba(17, 34, 51, 0.3);
   }
 
   .md-bc-primary-4 {
-    background-color: rgba(41, 121, 255, 0.4);
+    background-color: rgba(17, 34, 51, 0.4);
   }
 
   .md-bc-primary-5 {
-    background-color: rgba(41, 121, 255, 0.5);
+    background-color: rgba(17, 34, 51, 0.5);
   }
 
   .md-bc-primary-6 {
-    background-color: rgba(41, 121, 255, 0.6);
+    background-color: rgba(17, 34, 51, 0.6);
   }
 
   .md-bc-primary-7 {
-    background-color: rgba(41, 121, 255, 0.7);
+    background-color: rgba(17, 34, 51, 0.7);
   }
 
   .md-bc-primary-8 {
-    background-color: rgba(41, 121, 255, 0.8);
+    background-color: rgba(17, 34, 51, 0.8);
   }
 
   .md-bc-primary-9 {
-    background-color: rgba(41, 121, 255, 0.9);
+    background-color: rgba(17, 34, 51, 0.9);
   }
 
   .md-bc-success {
@@ -15960,43 +15960,43 @@
   }
 
   .md-c-primary {
-    color: #2979ff;
+    color: #123;
   }
 
   .md-c-primary-1 {
-    color: rgba(41, 121, 255, 0.1);
+    color: rgba(17, 34, 51, 0.1);
   }
 
   .md-c-primary-2 {
-    color: rgba(41, 121, 255, 0.2);
+    color: rgba(17, 34, 51, 0.2);
   }
 
   .md-c-primary-3 {
-    color: rgba(41, 121, 255, 0.3);
+    color: rgba(17, 34, 51, 0.3);
   }
 
   .md-c-primary-4 {
-    color: rgba(41, 121, 255, 0.4);
+    color: rgba(17, 34, 51, 0.4);
   }
 
   .md-c-primary-5 {
-    color: rgba(41, 121, 255, 0.5);
+    color: rgba(17, 34, 51, 0.5);
   }
 
   .md-c-primary-6 {
-    color: rgba(41, 121, 255, 0.6);
+    color: rgba(17, 34, 51, 0.6);
   }
 
   .md-c-primary-7 {
-    color: rgba(41, 121, 255, 0.7);
+    color: rgba(17, 34, 51, 0.7);
   }
 
   .md-c-primary-8 {
-    color: rgba(41, 121, 255, 0.8);
+    color: rgba(17, 34, 51, 0.8);
   }
 
   .md-c-primary-9 {
-    color: rgba(41, 121, 255, 0.9);
+    color: rgba(17, 34, 51, 0.9);
   }
 
   .md-c-success {
@@ -16800,43 +16800,43 @@
   }
 
   .md-border-s-1-primary {
-    border: 1px solid #2979ff;
+    border: 1px solid #123;
   }
 
   .md-border-s-t-1-primary {
-    border-top: 1px solid #2979ff;
+    border-top: 1px solid #123;
   }
 
   .md-border-s-r-1-primary {
-    border-right: 1px solid #2979ff;
+    border-right: 1px solid #123;
   }
 
   .md-border-s-b-1-primary {
-    border-bottom: 1px solid #2979ff;
+    border-bottom: 1px solid #123;
   }
 
   .md-border-s-l-1-primary {
-    border-left: 1px solid #2979ff;
+    border-left: 1px solid #123;
   }
 
   .md-border-s-2-primary {
-    border: 2px solid #2979ff;
+    border: 2px solid #123;
   }
 
   .md-border-s-t-2-primary {
-    border-top: 2px solid #2979ff;
+    border-top: 2px solid #123;
   }
 
   .md-border-s-r-2-primary {
-    border-right: 2px solid #2979ff;
+    border-right: 2px solid #123;
   }
 
   .md-border-s-b-2-primary {
-    border-bottom: 2px solid #2979ff;
+    border-bottom: 2px solid #123;
   }
 
   .md-border-s-l-2-primary {
-    border-left: 2px solid #2979ff;
+    border-left: 2px solid #123;
   }
 
   .md-border-s-1-success {
@@ -17640,43 +17640,43 @@
   }
 
   .md-border-ds-1-primary {
-    border: 1px dashed #2979ff;
+    border: 1px dashed #123;
   }
 
   .md-border-ds-t-1-primary {
-    border-top: 1px dashed #2979ff;
+    border-top: 1px dashed #123;
   }
 
   .md-border-ds-r-1-primary {
-    border-right: 1px dashed #2979ff;
+    border-right: 1px dashed #123;
   }
 
   .md-border-ds-b-1-primary {
-    border-bottom: 1px dashed #2979ff;
+    border-bottom: 1px dashed #123;
   }
 
   .md-border-ds-l-1-primary {
-    border-left: 1px dashed #2979ff;
+    border-left: 1px dashed #123;
   }
 
   .md-border-ds-2-primary {
-    border: 2px dashed #2979ff;
+    border: 2px dashed #123;
   }
 
   .md-border-ds-t-2-primary {
-    border-top: 2px dashed #2979ff;
+    border-top: 2px dashed #123;
   }
 
   .md-border-ds-r-2-primary {
-    border-right: 2px dashed #2979ff;
+    border-right: 2px dashed #123;
   }
 
   .md-border-ds-b-2-primary {
-    border-bottom: 2px dashed #2979ff;
+    border-bottom: 2px dashed #123;
   }
 
   .md-border-ds-l-2-primary {
-    border-left: 2px dashed #2979ff;
+    border-left: 2px dashed #123;
   }
 
   .md-border-ds-1-success {
@@ -18480,43 +18480,43 @@
   }
 
   .md-border-dt-1-primary {
-    border: 1px dotted #2979ff;
+    border: 1px dotted #123;
   }
 
   .md-border-dt-t-1-primary {
-    border-top: 1px dotted #2979ff;
+    border-top: 1px dotted #123;
   }
 
   .md-border-dt-r-1-primary {
-    border-right: 1px dotted #2979ff;
+    border-right: 1px dotted #123;
   }
 
   .md-border-dt-b-1-primary {
-    border-bottom: 1px dotted #2979ff;
+    border-bottom: 1px dotted #123;
   }
 
   .md-border-dt-l-1-primary {
-    border-left: 1px dotted #2979ff;
+    border-left: 1px dotted #123;
   }
 
   .md-border-dt-2-primary {
-    border: 2px dotted #2979ff;
+    border: 2px dotted #123;
   }
 
   .md-border-dt-t-2-primary {
-    border-top: 2px dotted #2979ff;
+    border-top: 2px dotted #123;
   }
 
   .md-border-dt-r-2-primary {
-    border-right: 2px dotted #2979ff;
+    border-right: 2px dotted #123;
   }
 
   .md-border-dt-b-2-primary {
-    border-bottom: 2px dotted #2979ff;
+    border-bottom: 2px dotted #123;
   }
 
   .md-border-dt-l-2-primary {
-    border-left: 2px dotted #2979ff;
+    border-left: 2px dotted #123;
   }
 
   .md-border-dt-1-success {
@@ -19320,43 +19320,43 @@
   }
 
   .md-border-db-1-primary {
-    border: 1px double #2979ff;
+    border: 1px double #123;
   }
 
   .md-border-db-t-1-primary {
-    border-top: 1px double #2979ff;
+    border-top: 1px double #123;
   }
 
   .md-border-db-r-1-primary {
-    border-right: 1px double #2979ff;
+    border-right: 1px double #123;
   }
 
   .md-border-db-b-1-primary {
-    border-bottom: 1px double #2979ff;
+    border-bottom: 1px double #123;
   }
 
   .md-border-db-l-1-primary {
-    border-left: 1px double #2979ff;
+    border-left: 1px double #123;
   }
 
   .md-border-db-2-primary {
-    border: 2px double #2979ff;
+    border: 2px double #123;
   }
 
   .md-border-db-t-2-primary {
-    border-top: 2px double #2979ff;
+    border-top: 2px double #123;
   }
 
   .md-border-db-r-2-primary {
-    border-right: 2px double #2979ff;
+    border-right: 2px double #123;
   }
 
   .md-border-db-b-2-primary {
-    border-bottom: 2px double #2979ff;
+    border-bottom: 2px double #123;
   }
 
   .md-border-db-l-2-primary {
-    border-left: 2px double #2979ff;
+    border-left: 2px double #123;
   }
 
   .md-border-db-1-success {
@@ -22229,43 +22229,43 @@
   }
 
   .xl-bc-primary {
-    background-color: #2979ff;
+    background-color: #123;
   }
 
   .xl-bc-primary-1 {
-    background-color: rgba(41, 121, 255, 0.1);
+    background-color: rgba(17, 34, 51, 0.1);
   }
 
   .xl-bc-primary-2 {
-    background-color: rgba(41, 121, 255, 0.2);
+    background-color: rgba(17, 34, 51, 0.2);
   }
 
   .xl-bc-primary-3 {
-    background-color: rgba(41, 121, 255, 0.3);
+    background-color: rgba(17, 34, 51, 0.3);
   }
 
   .xl-bc-primary-4 {
-    background-color: rgba(41, 121, 255, 0.4);
+    background-color: rgba(17, 34, 51, 0.4);
   }
 
   .xl-bc-primary-5 {
-    background-color: rgba(41, 121, 255, 0.5);
+    background-color: rgba(17, 34, 51, 0.5);
   }
 
   .xl-bc-primary-6 {
-    background-color: rgba(41, 121, 255, 0.6);
+    background-color: rgba(17, 34, 51, 0.6);
   }
 
   .xl-bc-primary-7 {
-    background-color: rgba(41, 121, 255, 0.7);
+    background-color: rgba(17, 34, 51, 0.7);
   }
 
   .xl-bc-primary-8 {
-    background-color: rgba(41, 121, 255, 0.8);
+    background-color: rgba(17, 34, 51, 0.8);
   }
 
   .xl-bc-primary-9 {
-    background-color: rgba(41, 121, 255, 0.9);
+    background-color: rgba(17, 34, 51, 0.9);
   }
 
   .xl-bc-success {
@@ -23069,43 +23069,43 @@
   }
 
   .xl-c-primary {
-    color: #2979ff;
+    color: #123;
   }
 
   .xl-c-primary-1 {
-    color: rgba(41, 121, 255, 0.1);
+    color: rgba(17, 34, 51, 0.1);
   }
 
   .xl-c-primary-2 {
-    color: rgba(41, 121, 255, 0.2);
+    color: rgba(17, 34, 51, 0.2);
   }
 
   .xl-c-primary-3 {
-    color: rgba(41, 121, 255, 0.3);
+    color: rgba(17, 34, 51, 0.3);
   }
 
   .xl-c-primary-4 {
-    color: rgba(41, 121, 255, 0.4);
+    color: rgba(17, 34, 51, 0.4);
   }
 
   .xl-c-primary-5 {
-    color: rgba(41, 121, 255, 0.5);
+    color: rgba(17, 34, 51, 0.5);
   }
 
   .xl-c-primary-6 {
-    color: rgba(41, 121, 255, 0.6);
+    color: rgba(17, 34, 51, 0.6);
   }
 
   .xl-c-primary-7 {
-    color: rgba(41, 121, 255, 0.7);
+    color: rgba(17, 34, 51, 0.7);
   }
 
   .xl-c-primary-8 {
-    color: rgba(41, 121, 255, 0.8);
+    color: rgba(17, 34, 51, 0.8);
   }
 
   .xl-c-primary-9 {
-    color: rgba(41, 121, 255, 0.9);
+    color: rgba(17, 34, 51, 0.9);
   }
 
   .xl-c-success {
@@ -23909,43 +23909,43 @@
   }
 
   .xl-border-s-1-primary {
-    border: 1px solid #2979ff;
+    border: 1px solid #123;
   }
 
   .xl-border-s-t-1-primary {
-    border-top: 1px solid #2979ff;
+    border-top: 1px solid #123;
   }
 
   .xl-border-s-r-1-primary {
-    border-right: 1px solid #2979ff;
+    border-right: 1px solid #123;
   }
 
   .xl-border-s-b-1-primary {
-    border-bottom: 1px solid #2979ff;
+    border-bottom: 1px solid #123;
   }
 
   .xl-border-s-l-1-primary {
-    border-left: 1px solid #2979ff;
+    border-left: 1px solid #123;
   }
 
   .xl-border-s-2-primary {
-    border: 2px solid #2979ff;
+    border: 2px solid #123;
   }
 
   .xl-border-s-t-2-primary {
-    border-top: 2px solid #2979ff;
+    border-top: 2px solid #123;
   }
 
   .xl-border-s-r-2-primary {
-    border-right: 2px solid #2979ff;
+    border-right: 2px solid #123;
   }
 
   .xl-border-s-b-2-primary {
-    border-bottom: 2px solid #2979ff;
+    border-bottom: 2px solid #123;
   }
 
   .xl-border-s-l-2-primary {
-    border-left: 2px solid #2979ff;
+    border-left: 2px solid #123;
   }
 
   .xl-border-s-1-success {
@@ -24749,43 +24749,43 @@
   }
 
   .xl-border-ds-1-primary {
-    border: 1px dashed #2979ff;
+    border: 1px dashed #123;
   }
 
   .xl-border-ds-t-1-primary {
-    border-top: 1px dashed #2979ff;
+    border-top: 1px dashed #123;
   }
 
   .xl-border-ds-r-1-primary {
-    border-right: 1px dashed #2979ff;
+    border-right: 1px dashed #123;
   }
 
   .xl-border-ds-b-1-primary {
-    border-bottom: 1px dashed #2979ff;
+    border-bottom: 1px dashed #123;
   }
 
   .xl-border-ds-l-1-primary {
-    border-left: 1px dashed #2979ff;
+    border-left: 1px dashed #123;
   }
 
   .xl-border-ds-2-primary {
-    border: 2px dashed #2979ff;
+    border: 2px dashed #123;
   }
 
   .xl-border-ds-t-2-primary {
-    border-top: 2px dashed #2979ff;
+    border-top: 2px dashed #123;
   }
 
   .xl-border-ds-r-2-primary {
-    border-right: 2px dashed #2979ff;
+    border-right: 2px dashed #123;
   }
 
   .xl-border-ds-b-2-primary {
-    border-bottom: 2px dashed #2979ff;
+    border-bottom: 2px dashed #123;
   }
 
   .xl-border-ds-l-2-primary {
-    border-left: 2px dashed #2979ff;
+    border-left: 2px dashed #123;
   }
 
   .xl-border-ds-1-success {
@@ -25589,43 +25589,43 @@
   }
 
   .xl-border-dt-1-primary {
-    border: 1px dotted #2979ff;
+    border: 1px dotted #123;
   }
 
   .xl-border-dt-t-1-primary {
-    border-top: 1px dotted #2979ff;
+    border-top: 1px dotted #123;
   }
 
   .xl-border-dt-r-1-primary {
-    border-right: 1px dotted #2979ff;
+    border-right: 1px dotted #123;
   }
 
   .xl-border-dt-b-1-primary {
-    border-bottom: 1px dotted #2979ff;
+    border-bottom: 1px dotted #123;
   }
 
   .xl-border-dt-l-1-primary {
-    border-left: 1px dotted #2979ff;
+    border-left: 1px dotted #123;
   }
 
   .xl-border-dt-2-primary {
-    border: 2px dotted #2979ff;
+    border: 2px dotted #123;
   }
 
   .xl-border-dt-t-2-primary {
-    border-top: 2px dotted #2979ff;
+    border-top: 2px dotted #123;
   }
 
   .xl-border-dt-r-2-primary {
-    border-right: 2px dotted #2979ff;
+    border-right: 2px dotted #123;
   }
 
   .xl-border-dt-b-2-primary {
-    border-bottom: 2px dotted #2979ff;
+    border-bottom: 2px dotted #123;
   }
 
   .xl-border-dt-l-2-primary {
-    border-left: 2px dotted #2979ff;
+    border-left: 2px dotted #123;
   }
 
   .xl-border-dt-1-success {
@@ -26429,43 +26429,43 @@
   }
 
   .xl-border-db-1-primary {
-    border: 1px double #2979ff;
+    border: 1px double #123;
   }
 
   .xl-border-db-t-1-primary {
-    border-top: 1px double #2979ff;
+    border-top: 1px double #123;
   }
 
   .xl-border-db-r-1-primary {
-    border-right: 1px double #2979ff;
+    border-right: 1px double #123;
   }
 
   .xl-border-db-b-1-primary {
-    border-bottom: 1px double #2979ff;
+    border-bottom: 1px double #123;
   }
 
   .xl-border-db-l-1-primary {
-    border-left: 1px double #2979ff;
+    border-left: 1px double #123;
   }
 
   .xl-border-db-2-primary {
-    border: 2px double #2979ff;
+    border: 2px double #123;
   }
 
   .xl-border-db-t-2-primary {
-    border-top: 2px double #2979ff;
+    border-top: 2px double #123;
   }
 
   .xl-border-db-r-2-primary {
-    border-right: 2px double #2979ff;
+    border-right: 2px double #123;
   }
 
   .xl-border-db-b-2-primary {
-    border-bottom: 2px double #2979ff;
+    border-bottom: 2px double #123;
   }
 
   .xl-border-db-l-2-primary {
-    border-left: 2px double #2979ff;
+    border-left: 2px double #123;
   }
 
   .xl-border-db-1-success {

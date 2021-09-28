@@ -6,7 +6,8 @@ const init = require('./init');
 
 exports.activate = async function (context) {
   const initData = await init();
-  require('./uct-theme')(context, initData); // uct-theme插件
+  require('./hover')(context, initData); // uct-theme插件
+  require('./tip')(context, initData); // uct-theme插件
 };
 
 /**

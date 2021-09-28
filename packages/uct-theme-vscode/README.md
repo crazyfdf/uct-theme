@@ -151,13 +151,4 @@ $unit: 1px;
 - 当构建生产时，您应该总是使用 purge 来 tree-shake 优化未使用的样式，并优化您的最终构建大小, 删除未使用的样式时，很难最终得到超过 10kb 的压缩 CSS。
 
 # VS Code 插件
-
-1. vscode-->首选项-->设置搜索 @ext:uct.uct-css-tip
-
-2. 如果您用的 uct-theme,请先打包您的 css
-
-   ```
-   npx uct-theme build
-   ```
-
-3. 配置您想要提示的 CSS，需要提示的加载 css 路径（全路径）
+![uct-css-tip](2021-09-28-17-23-15.png)

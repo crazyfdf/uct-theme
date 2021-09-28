@@ -7,7 +7,7 @@
     "uct-theme": "./bin/uct-theme"
   },
   "scripts": {
-    "build": "sass ./index.scss ./packages/uct-theme-vscode/index.css --style compressed"
+    "build": "sass ./index.scss ./packages/uct-theme-vscode/index.css"
   },
   "license": "MIT",
   "dependencies": {
