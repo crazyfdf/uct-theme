@@ -1,13 +1,13 @@
 {
   "name": "uct-theme",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "uct-theme",
   "main": "index.scss",
   "bin": {
     "uct-theme": "./bin/uct-theme"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sass ./index.scss ./packages/uct-theme-vscode/index.css --style compressed"
   },
   "license": "MIT",
   "dependencies": {

@@ -1,40 +1,40 @@
 // 基本单位
-$unit: 1px;
+$unit: 1px !default;
 
 // 主题颜色
-$uct-primary: #2979ff;
-$uct-success: #19be6b;
-$uct-error: #fa3534;
-$uct-warning: #f90;
-$uct-info: #909399;
+$uct-primary: #2979ff !default;
+$uct-success: #19be6b !default;
+$uct-error: #fa3534 !default;
+$uct-warning: #f90 !default;
+$uct-info: #909399 !default;
 
 // 背景
-$uct-bgc: #f3f4f6;
+$uct-bgc: #f3f4f6 !default;
 
 // 字体
 // 主要
-$uct-main: #303133;
+$uct-main: #303133 !default;
 // 一般
-$uct-base: #606266;
+$uct-base: #606266 !default;
 // 次要
-$uct-tips: #909399;
+$uct-tips: #909399 !default;
 // 占位
-$uct-light: #c0c4cc;
+$uct-light: #c0c4cc !default;
 
 // 边框
-$uct-brc: #e4e7ed;
+$uct-brc: #e4e7ed !default;
 
 // 主色
-$uct-black: #000;
-$uct-white: #fff;
-$uct-gray: #bbb;
-$uct-dark: #777;
-$uct-blue: #1464c7;
-$uct-skyblue: #4e92e7;
-$uct-green: #01b601;
-$uct-red: #f00;
-$uct-orange: #f79347;
-$uct-yellow: #ffbf2b;
+$uct-black: #000 !default;
+$uct-white: #fff !default;
+$uct-gray: #bbb !default;
+$uct-dark: #777 !default;
+$uct-blue: #1464c7 !default;
+$uct-skyblue: #4e92e7 !default;
+$uct-green: #01b601 !default;
+$uct-red: #f00 !default;
+$uct-orange: #f79347 !default;
+$uct-yellow: #ffbf2b !default;
 
 // 偏移变量大小
 $space-sizes: (
@@ -53,7 +53,7 @@ $space-sizes: (
   80: 80,
   100: 100,
   140: 140,
-);
+) !default;
 
 // 字体大小
 $font-size: (
@@ -72,13 +72,13 @@ $font-size: (
   32:32,
   34:34,
   36:36
-);
+) !default;
 
 // 边框粗细
 $border-sizes: (
   1:1,
   2:2,
-);
+) !default;
 
 // 边框圆角大小
 $radius-sizes: (
@@ -89,7 +89,7 @@ $radius-sizes: (
   24: 24,
   30: 30,
   full:9999
-);
+) !default;
 
 // 省略的行数
 $omit-sizes: (
@@ -97,7 +97,7 @@ $omit-sizes: (
   2:2,
   3:3,
   4:4,
-);
+) !default;
 
 // grid行数|列数
 $grid-sizes: (
@@ -107,7 +107,7 @@ $grid-sizes: (
   4:4,
   5:5,
   6:6
-);
+) !default;
 // grid间距大小
 $gap-sizes: (
   10: 10,
@@ -115,4 +115,12 @@ $gap-sizes: (
   20: 20,
   30: 30,
   40: 40
-);
+) !default;
+
+// 响应式布局尺寸配置
+$media-sizes: (
+  '':0,
+  'sm-':768px,
+  'md-':1024px,
+  'xl-':1280px,
+) !default;

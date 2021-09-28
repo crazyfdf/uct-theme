@@ -1,175 +1,181 @@
 /* stylelint-disable */
 
-// 偏移
-@each $typeKey, $type in $space-types {
-  @each $sizeKey, $size in $space-sizes {
-    // m-t-10 margin-top:10px;
-    @each $directionKey, $direction in $space-directions {
-      .#{$typeKey}-#{$directionKey}-#{$sizeKey} {
-        #{$type}-#{$direction}: $size* $unit;
-      }
-    }
+@each $mediaKey,$MediaSize in $media-sizes {
+  @media (min-width: $MediaSize) {
+    // 偏移
+    @each $typeKey, $type in $space-types {
+      @each $sizeKey, $size in $space-sizes {
+        // m-t-10 margin-top:10px;
+        @each $directionKey, $direction in $space-directions {
+          .#{$mediaKey}#{$typeKey}-#{$directionKey}-#{$sizeKey} {
+            #{$type}-#{$direction}: $size* $unit;
+          }
+        }
 
-    // m-x-10 margin: 10px 0;
-    .#{$typeKey}-x-#{$sizeKey} {
-      #{$type}-left: $size* $unit;
-      #{$type}-right: $size* $unit;
-    }
+        // m-x-10 margin: 10px 0;
+        .#{$mediaKey}#{$typeKey}-x-#{$sizeKey} {
+          #{$type}-left: $size* $unit;
+          #{$type}-right: $size* $unit;
+        }
 
-    // m-y-10 margin: 0 10px;
-    .#{$typeKey}-y-#{$sizeKey} {
-      #{$type}-bottom: $size* $unit;
-      #{$type}-top: $size* $unit;
-    }
+        // m-y-10 margin: 0 10px;
+        .#{$mediaKey}#{$typeKey}-y-#{$sizeKey} {
+          #{$type}-bottom: $size* $unit;
+          #{$type}-top: $size* $unit;
+        }
 
-    // m-10 margin: 10px;
-    .#{$typeKey}-#{$sizeKey} {
-      #{$type}: $size* $unit;
-    }
-  }
-}
-
-// 颜色
-@each $typeKey, $type in $color-types {
-  // c-red  color:red;
-  // bc-red background-color: red;
-  @each $sizeKey, $size in $color-sizes {
-    .#{$typeKey}-#{""+$sizeKey} {
-      #{$type}: $size;
-    }
-
-    // bc-red-1 background-color: rgba(red,.1);
-    @for $i from 1 to 10 {
-      .#{$typeKey}-#{""+$sizeKey}-#{$i} {
-        #{$type}: rgba($size, $i/10);
-      }
-    }
-  }
-}
-
-// 边框
-@each $typeKey, $type in $border-types {
-  @each $sizeKey, $size in $color-sizes {
-    @each $i,$j in $border-sizes {
-      // border-s-1-red border:1px solid red;
-      .border-#{$typeKey}-#{$i}-#{""+$sizeKey} {
-        border: $j * $unit $type $size;
-      }
-
-      // border-s-t-1-red border-top:1px solid red;
-      @each $directionKey, $direction in $space-directions {
-        .border-#{$typeKey}-#{$directionKey}-#{$i}-#{""+$sizeKey} {
-          border-#{$direction}: $j * $unit $type $size;
+        // m-10 margin: 10px;
+        .#{$mediaKey}#{$typeKey}-#{$sizeKey} {
+          #{$type}: $size* $unit;
         }
       }
     }
-  }
-}
 
-// 圆角
-@each $sizeKey,$size in $radius-sizes {
-  // br-tl-10 border-top-left-radius:10px;
-  @each $directionKey, $direction in $radius-types {
-    .br-#{$directionKey}-#{$sizeKey} {
-      border-#{$direction}-radius: $size * $unit;
-    }
-  }
+    // 颜色
+    @each $typeKey, $type in $color-types {
+      // c-red  color:red;
+      // bc-red background-color: red;
+      @each $sizeKey, $size in $color-sizes {
+        .#{$mediaKey}#{$typeKey}-#{""+$sizeKey} {
+          #{$type}: $size;
+        }
 
-  // br-t-10 border-radius:10px 10px 0 0;
-  .br-t-#{$sizeKey} {
-    border-radius: $size * $unit $size * $unit 0 0;
-  }
-
-  // br-l-10 border-radius: 10px 0 0 10px;
-  .br-l-#{$sizeKey} {
-    border-radius: $size * $unit 0 0  $size * $unit;
-  }
-
-  // br-r-10 border-radius: 0 10px 10px 0;
-  .br-r-#{$sizeKey} {
-    border-radius: 0 $size * $unit $size * $unit 0;
-  }
-
-  // br-b-10 border-radius: 0 0 10px 10px;
-  .br-b-#{$sizeKey} {
-    border-radius: 0 0 $size * $unit $size * $unit;
-  }
-
-  // br-10 border-radius: 10px;
-  .br-#{$sizeKey} {
-    border-radius: $size * $unit;
-  }
-}
-
-// 字体
-// f-12 font-size:12px;
-@each $i,$j in $font-size {
-  .font-#{$i} {
-    font-size: $j * $unit;
-  }
-}
-
-// 文本溢出省略
-// more-3
-@each $i,$j in $omit-sizes {
-  .more-#{$i} {
-    @if $j == 1 {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    @else {
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: $j;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  }
-}
-
-// flex
-// flex-x-sb-s: display: flex;flex-direction:row;justify-content:space-between;align-items:flex-start;
-@each $direction-key,$direction in $flex-direction {
-  @each $justify-key,$justify in $flex-justify {
-    @each $align-key,$align in $flex-align {
-      .flex-#{$direction-key}-#{$justify-key}-#{$align-key} {
-        align-items: $align;
-        display: flex;
-        flex-direction: $direction;
-        justify-content: $justify;
+        // bc-red-1 background-color: rgba(red,.#{$mediaKey}1);
+        @for $i from 1 to 10 {
+          .#{$mediaKey}#{$typeKey}-#{""+$sizeKey}-#{$i} {
+            #{$type}: rgba($size, $i/10);
+          }
+        }
       }
     }
-  }
-}
 
-// grid
-// grid-y-1 grid-template-rows: repeat(1, minmax(0, 1fr));;
-@each $direction-key,$direction in $grid-direction {
-  @each $i,$j in $grid-sizes {
-    .grid-#{$direction-key}-#{$i} {
-      display: grid;
-      @if $direction=='rows' {
-        grid-auto-flow:column;
+    // 边框
+    @each $typeKey, $type in $border-types {
+      @each $sizeKey, $size in $color-sizes {
+        @each $i,$j in $border-sizes {
+          // border-s-1-red border:1px solid red;
+          .#{$mediaKey}border-#{$typeKey}-#{$i}-#{""+$sizeKey} {
+            border: $j * $unit $type $size;
+          }
+
+          // border-s-t-1-red border-top:1px solid red;
+          @each $directionKey, $direction in $space-directions {
+            .#{$mediaKey}border-#{$typeKey}-#{$directionKey}-#{$i}-#{""+$sizeKey} {
+              border-#{$direction}: $j * $unit $type $size;
+            }
+          }
+        }
       }
-      grid-template-#{$direction}: repeat($j, minmax(0, 1fr));
     }
-  }
-}
 
-// gap
-@each $i,$j in $gap-sizes {
-  // gap-10 gap: 10px;
-  .gap-#{$i} {
-    gap: $j * $unit;
-  }
-  // gap-x-20 column-gap: 20px;
-  .gap-x-#{$i} {
-    column-gap: $j * $unit;
-  }
-  // gap-y-40 row-gap: 40px;
-  .gap-y-#{$i} {
-    row-gap: $j * $unit;
+    // 圆角
+    @each $sizeKey,$size in $radius-sizes {
+      // br-tl-10 border-top-left-radius:10px;
+      @each $directionKey, $direction in $radius-types {
+        .#{$mediaKey}br-#{$directionKey}-#{$sizeKey} {
+          border-#{$direction}-radius: $size * $unit;
+        }
+      }
+
+      // br-t-10 border-radius:10px 10px 0 0;
+      .#{$mediaKey}br-t-#{$sizeKey} {
+        border-radius: $size * $unit $size * $unit 0 0;
+      }
+
+      // br-l-10 border-radius: 10px 0 0 10px;
+      .#{$mediaKey}br-l-#{$sizeKey} {
+        border-radius: $size * $unit 0 0  $size * $unit;
+      }
+
+      // br-r-10 border-radius: 0 10px 10px 0;
+      .#{$mediaKey}br-r-#{$sizeKey} {
+        border-radius: 0 $size * $unit $size * $unit 0;
+      }
+
+      // br-b-10 border-radius: 0 0 10px 10px;
+      .#{$mediaKey}br-b-#{$sizeKey} {
+        border-radius: 0 0 $size * $unit $size * $unit;
+      }
+
+      // br-10 border-radius: 10px;
+      .#{$mediaKey}br-#{$sizeKey} {
+        border-radius: $size * $unit;
+      }
+    }
+
+    // 字体
+    // f-12 font-size:12px;
+    @each $i,$j in $font-size {
+      .#{$mediaKey}font-#{$i} {
+        font-size: $j * $unit;
+      }
+    }
+
+    // 文本溢出省略
+    // more-3
+    @each $i,$j in $omit-sizes {
+      .#{$mediaKey}more-#{$i} {
+        @if $j == 1 {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        @else {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: $j;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    // flex
+    // flex-x-sb-s: display: flex;flex-direction:row;justify-content:space-between;align-items:flex-start;
+    @each $direction-key,$direction in $flex-direction {
+      @each $justify-key,$justify in $flex-justify {
+        @each $align-key,$align in $flex-align {
+          .#{$mediaKey}flex-#{$direction-key}-#{$justify-key}-#{$align-key} {
+            align-items: $align;
+            display: flex;
+            flex-direction: $direction;
+            justify-content: $justify;
+          }
+        }
+      }
+    }
+
+    // grid
+    // grid-y-1 grid-template-rows: repeat(1, minmax(0, 1fr));;
+    @each $direction-key,$direction in $grid-direction {
+      @each $i,$j in $grid-sizes {
+        .#{$mediaKey}grid-#{$direction-key}-#{$i} {
+          display: grid;
+
+          @if $direction=='rows' {
+            grid-auto-flow: column;
+          }
+
+          grid-template-#{$direction}: repeat($j, minmax(0, 1fr));
+        }
+      }
+    }
+
+    // gap
+    @each $i,$j in $gap-sizes {
+      // gap-10 gap: 10px;
+      .#{$mediaKey}gap-#{$i} {
+        gap: $j * $unit;
+      }
+      // gap-x-20 column-gap: 20px;
+      .#{$mediaKey}gap-x-#{$i} {
+        column-gap: $j * $unit;
+      }
+      // gap-y-40 row-gap: 40px;
+      .#{$mediaKey}gap-y-#{$i} {
+        row-gap: $j * $unit;
+      }
+    }
   }
 }

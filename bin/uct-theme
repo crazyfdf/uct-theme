@@ -6,4 +6,6 @@ program.version(require('../package').version);
 // 路由:当输入命令init的时候执行这里
 program.command('init').description('初始化').action(require('../lib/init'));
 
+program.command('build').description('打包scss').action(require('../lib/build'));
+
 program.parse(process.argv);
