@@ -1,7 +1,2 @@
-# Change Log
-All notable changes to the "vscode-plugin-demo" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
 ## [Unreleased]
-- Initial release
+- 代码补全，悬浮提示
